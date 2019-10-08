@@ -6,13 +6,13 @@
 .sidebar {
   width: 25%;
   float: left;
-  background-color: blue;
+  background-color: lightblue;
   height: 100%;
 }
 
 .map {
   width: 75%;
-  background-color: pink;
+  background-color: purple;
   height: 100%;
   margin-left: 25%;
 }
