@@ -1,6 +1,14 @@
 import React from 'react';
+import '../styles/index.css';
 
-let hi = 'hi';
+import MapView from './Components/MapView';
+import Sidebar from './Components/Sidebar';
+
 export default function App() {
-  return <div>{hi}</div>;
+  return (
+    <div className="container">
+      <Sidebar></Sidebar>
+      <MapView></MapView>
+    </div>
+  );
 }
