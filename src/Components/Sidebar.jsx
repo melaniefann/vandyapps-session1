@@ -3,6 +3,7 @@ import { getResponse } from '../util';
 
 // TODO: make input fields, do basic things with them to *react*
 // implement https://nominatim.openstreetmap.org/?format=json&addressdetails=1&q=vanderbilt+&format=json&limit=1
+
 export default class Sidebar extends Component {
   constructor() {
     super();
