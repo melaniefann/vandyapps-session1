@@ -17,16 +17,16 @@ L.Icon.Default.mergeOptions({
 // 2. Figure out a way to get the latlng/name from Sidebar -> MapView
 // 3. Maybe render multiple marker/popup pairs?
 
-export default function MapView() {
-  const position = [36.1447, -86.8027];
+export default function MapView({ position }) {
+  //const position = {name: "Vanderbilt University", latlng: [36.1447, -86.8027]};
   return (
-    <Map className="map" center={position} zoom={13}>
+    <Map className="map" center={position.latlng} zoom={13}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={position}>
-        <Popup>Vanderbilt University</Popup>
+      <Marker position={position.latlng}>
+        <Popup>{position.name}</Popup>
       </Marker>
     </Map>
   );
